@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Hanken';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root{
+    --fonte-principal: 'Hanken';
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--fonte-principal), Arial, sans-serif;
+}
+
+body{
+    width: 100 vw;
+    height: 100 vh;
+}
