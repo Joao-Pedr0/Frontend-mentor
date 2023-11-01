@@ -27,7 +27,8 @@
     /*Cores dos titulos e botão (coloquei os nomes das cores em algumas variaveis pois é usada em mais de um lugar)*/
     --cor-azul-palido: hsl(221, 100%, 96%);
     --cor-titulo-res: hsl(241, 100%, 89%);
-    --cor-azul-escuro: hsl(224, 30%, 27%)
+    --cor-azul-escuro: hsl(224, 30%, 27%);
+    --cor-branco-transparente: rgba(255, 255, 255, 0.75);
 
 }
 
@@ -38,30 +39,137 @@
 }
 
 body{
-    width: 100 vw;
-    height: 100 vh;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 #res-card{
     display: inline-block;
     background-image: linear-gradient(var(--cor-fundo1), var(--cor-fundo2));
-    max-width: 350px;
+    min-width: 290px;
     color: white;
     text-align: center;
     border-radius: 20px;
-    height: 450px;
+    height: 400px;
 }
 
-.titulo{
+#res{
+    background-image: linear-gradient(var(--cor-circulo1), var(--cor-circulo2));
+    width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 50%;
+    
+}
+
+.res-titulo{
     font-size: 1.2em;
     padding: 10px;
+    margin: 15px;
+    color: var(--cor-branco-transparente);
+}
+
+#res h2{
+    font-size: 3.5em;
+    margin: 15px 0px 0px 0px;
+}
+
+#res > p{
+    color: var(--cor-branco-transparente);
+}
+
+#nota{
+    margin: 20px;
+    font-size: 1.7em;
+    font-weight: 700 ;
+    color: white;
+}
+
+#nota-texto{
+    font-size: 0.9em;
+    width: 220px;
+    margin: auto;
+    color: var(--cor-branco-transparente);
 }
 
 #sum-card{
-    background-color: purple;
-    border-radius: 20px;
+    background-color: var(--cor-azul-palido);
     display: inline-block;
-    max-width: 350px;
+    width: 290px;
     text-align: center;
-    height: 450px;
+    height: 400px;
+}
+
+.sum-titulo{
+    color: var(--cor-azul-escuro);
+    font-size: 1.2em;
+    padding: 25px 0px 0px 30px;
+    text-align: left;
+}
+
+#sum-card p{
+    text-align: justify;
+    margin: 40px 0px 40px 45px;
+    font-weight: 700;
+    font-size: .95em;
+    display: flex;
+    align-items: center;
+}
+
+p > span{
+    color: var(--cor-azul-escuro);
+}
+
+p > img{
+    margin-right: 10px;
+}
+
+#reacao{
+    color: var(--reacao-cor);
+}
+
+#reacao > span{
+    margin-left: 59px;
+}
+
+#memoria{
+    color: var(--memoria-cor);
+}
+
+#memoria > span{
+    margin-left: 49px;
+}
+
+#verbal{
+    color: var(--verbal-cor);
+}
+
+#verbal > span{
+    margin-left: 66px;
+}
+
+#visual{
+    color: var(--visual-cor);
+}
+
+#visual > span{
+    margin-left: 69px;
+}
+
+
+#botao{
+    background-color: var(--cor-azul-escuro);
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--cor-branco-transparente);
+    width: 220px;
+    height: 43px;
+    border-radius: 30px;
+    border: 0px;
+    
 }
