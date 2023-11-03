@@ -28,7 +28,7 @@
     --cor-azul-palido: hsl(221, 100%, 96%);
     --cor-titulo-res: hsl(241, 100%, 89%);
     --cor-azul-escuro: hsl(224, 30%, 27%);
-    --cor-branco-transparente: rgba(255, 255, 255, 0.75);
+    --cor-branco-transparente: rgba(255, 255, 255, 0.493);
 
 }
 
@@ -161,15 +161,64 @@ p > img{
     margin-left: 69px;
 }
 
+.nota-sum{
+    font-weight: 500;
+    color: var(--cor-azul-escuro);
+}
+
 
 #botao{
     background-color: var(--cor-azul-escuro);
     font-weight: 700;
     font-size: 1em;
-    color: var(--cor-branco-transparente);
+    color: var(--cor-azul-palido);
     width: 220px;
     height: 43px;
     border-radius: 30px;
     border: 0px;
     
 }
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    section{
+        height: 100vh;
+        width: 100vw;
+        display: block;
+    }
+
+   #res-card{
+    display: block;
+    border-radius: 0px 0px 20px 20px;
+   }
+
+   #res-card h1{
+    padding-top: 15px;
+    margin-top: 0px;
+   }
+
+   #nota-texto{
+    min-width: 260px;
+   }
+
+   #sum-card{
+    margin: 0px;
+    display: block;
+    margin: auto;
+   }
+
+   #sum-card h2{
+    margin: 0px;
+    display: block;
+    margin: auto;
+   }
+
+   #sum-card p{
+    margin: 60px auto;
+   }
+
+   #botao{
+    width: 330px;
+    height: 60px;
+   }
+} 
+    
