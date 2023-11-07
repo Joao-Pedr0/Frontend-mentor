@@ -2,8 +2,9 @@
 
 @media screen and (min-width: 1000px) {
     body{
-        height: 700px
+        height: 950px
     }
+
     
     body > main#principal{
         display: flex;

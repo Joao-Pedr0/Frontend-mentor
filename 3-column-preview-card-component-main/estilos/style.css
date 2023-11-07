@@ -22,17 +22,18 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     width: 100vw;
     height: 100vh;
     background-color: white;
+    
 }
 
 body{
-    height: 1450px;
+    height: 1400px;
     display: flex; 
-    align-items: center;    
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 main#principal{
@@ -40,6 +41,7 @@ main#principal{
     margin: auto;
     color: white;
     border-radius: 15px;
+    
 }
 
 #principal > section{
