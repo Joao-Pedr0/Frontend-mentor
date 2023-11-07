@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1200px) {
+    body{
+        height: 700px
+    }
+    
+    body > main#principal{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#sedans{
+        display: inline-block;
+        border-radius: 10px 0px 0px 10px;
+        height: 500px;
+        width: 320px;
+        text-align: left;
+    }
+
+    section#suvs{
+        display: inline-block;
+        width: 320px;
+        height: 500px;
+        text-align: left;
+    }
+
+    section#luxuosos{
+        display: inline-block;
+        border-radius: 0px 10px 10px 0px;
+        width: 320px;
+        height: 500px;
+        text-align: left;
+    }
+
+    p{
+        margin-bottom: 60px;
+    }
+}
